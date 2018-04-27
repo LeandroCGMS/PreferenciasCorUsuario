@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/texto_titulo"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupId"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:background="@android:color/background_light">
+
+            <RadioButton
+                android:id="@+id/azulId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cor_azul" />
+
+            <RadioButton
+                android:id="@+id/laranjaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cor_laranja" />
+
+            <RadioButton
+                android:id="@+id/verdeId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cor_verde" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/botao_salvar" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
